@@ -19,7 +19,7 @@ public class MainController {
 		System.out.println(" In welcome----without name---->");
 		model.addAttribute("message", "Welcome Suprakash");
 		model.addAttribute("counter", ++counter);
-		logger.debug("[welcome] counter : {}", counter);
+		logger.debug("[welcome] counter---> : {}", counter);
 
 		// Spring uses InternalResourceViewResolver and return back index.jsp
 		return VIEW_INDEX;
