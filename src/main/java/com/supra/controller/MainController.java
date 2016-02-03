@@ -16,7 +16,7 @@ public class MainController {
 
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public String welcome(ModelMap model) {
-
+		System.out.println(" In welcome----without name---->");
 		model.addAttribute("message", "Welcome Suprakash");
 		model.addAttribute("counter", ++counter);
 		logger.debug("[welcome] counter : {}", counter);
